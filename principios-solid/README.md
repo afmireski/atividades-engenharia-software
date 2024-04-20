@@ -22,6 +22,15 @@ Com essa segunda implementação as cada responsabilidade, ou ação, foi separa
 
 ## I — Interface Segregation Principle (Princípio da Segregação da Interface)
 
+O Interface Segregation Principle (ISP) defende que um recurso não deve depender de algo que ele não necessita, em síntese, cortar o inútil, criando interfaces enxutas, que utilizam só o necessário.  
+Essa abordagem possibilita que uma alteração não gere propagações que possam se espalhar por várias partes do código ao seu redor, quebrando várias lógicas.  
+Porém é o princípio que deve ser utilizado com cuidado, pois pode-se modularizar tanto ao ponto de que o código fica muito burocrático de ser gerenciado.
+
+
 ## D — Dependency Inversion Principle (Princípio da inversão da dependência)
+
+Numa aplicação diferentes recursos se relacionam entre si. Uma serviço de CRUD de usuário quase certamente utilizará algum meio de comunicação com o banco de dados. Porém elementos do projeto dependerem de recursos específicos acopla muito o código a uma tecnologia em específico. 
+Por exemplo, imagine que um ecommerce implementa toda sua regra de compra acoplado a um banco de dados MySQL, porém, em dado momento, é necessário trocar para um banco Oracle. Esse cenário seria um pesadelo.
+Assim, o a Inversão de Dependência diz que elementos de alto nível, próximos a lógica, não devem depender, conhecer, os elementos de baixo nível, os recursos, como bancos específicos, e sim, somente suas abstrações, interfaces, o que facilita o desacoplamento.
 
 ## Prefira Composição a Herança
