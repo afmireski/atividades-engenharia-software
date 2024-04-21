@@ -24,5 +24,6 @@ class ShoppingCartService {
     }
   }
   
-  // Instancia a regra passando a implementação correta
+  // Instancia a regra passando a implementação desejada
+  // Suportaria outra regra que seguisse o mesmo contrato
   const shoppingCartService = new ShoppingCartService(new StripePaymentProcessor());
