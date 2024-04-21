@@ -34,3 +34,6 @@ Por exemplo, imagine que um ecommerce implementa toda sua regra de compra acopla
 Assim, o a Inversão de Dependência diz que elementos de alto nível, próximos a lógica, não devem depender, conhecer, os elementos de baixo nível, os recursos, como bancos específicos, e sim, somente suas abstrações, interfaces, o que facilita o desacoplamento.
 
 ## Prefira Composição a Herança
+
+Na década de 80, herança começou a ser tratada como bala de prata para o reúso de código, porém isso acabou gerando acoplamentos indesejáveis entre classes com nível diferente de herança, deixando o código mais carregado e complexo do que precisava ser. Por exemplo A é pai de B e C, que são pai de D. D poderia precisar de algo de B e C mas não necessariamente de A. Herança faz com muitas características desnecessárias sejam transmitidas.
+Nesse contexto, é mais interessante usar composição, fazer com que uma classe A que precise de algo de B tenha B como parte de si, sem necessariamente herdar suas características. Isso diminui o acoplamento.
