@@ -8,6 +8,6 @@ Documente todos os 3 padrões em um mesmo repositório.
 
 ## Padrões de projeto
 
-- Factory Method (Criacional)
+- [Factory Method](./factory-method/factory-method.md) (Criacional)
 - Adapter (Estrutural)
 - Iterator (Comportamental)
