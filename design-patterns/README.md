@@ -9,5 +9,5 @@ Documente todos os 3 padrões em um mesmo repositório.
 ## Padrões de projeto
 
 - [Factory Method](./factory-method/factory-method.md) (Criacional)
-- Bridge (Estrutural)
-- Iterator (Comportamental)
+- [Bridge](./briedge/bridge.md) (Estrutural)
+- [Iterator](./iterator/iterator.md) (Comportamental)
