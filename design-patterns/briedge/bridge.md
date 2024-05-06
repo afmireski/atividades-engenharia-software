@@ -41,8 +41,7 @@ classDiagram
 
             + metodo()
         }
-    }
-        
+    }     
 
 
     class AbstracaoRefinada {
